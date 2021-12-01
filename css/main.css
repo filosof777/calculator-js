@@ -370,7 +370,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "sans", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   background-color: #fff;
 }
 
@@ -411,6 +411,108 @@ img {
   padding: 0;
 }
 
+.calc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 414px;
+  height: 870px;
+  background-color: #001e34;
+}
+
+.calc-inner {
+  position: relative;
+  height: 50%;
+}
+
+.answer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: 75%;
+}
+
+.calc-answer {
+  background-color: transparent;
+  color: #fff;
+  text-align: right;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 0 35px;
+  border: none;
+}
+
+.calc-input {
+  color: #fff;
+  font-weight: bold;
+  font-size: 70px;
+  padding: 0 20px;
+  width: 100%;
+  height: 100px;
+  text-align: right;
+  border: none;
+}
+
+.calc-input:nth-child(2) {
+  top: 25%;
+  font-size: 50px;
+}
+
+.list {
+  position: relative;
+  padding: 0 3px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  -ms-grid-rows: (84px)[5];
+      grid-template-rows: repeat(5, 84px);
+  gap: 3px;
+}
+
+.item:nth-child(2) .calc-btn,
+.item:nth-child(3) .calc-btn,
+.item:nth-child(4) .calc-btn,
+.item:nth-child(8) .calc-btn,
+.item:nth-child(12) .calc-btn {
+  color: #ffa800;
+}
+
+.item:nth-child(16) .calc-btn {
+  background-color: #ffa800;
+}
+
+.item:nth-child(16) {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  grid-row: 4/6;
+}
+
+.calc-btn {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 33px;
+  color: #fff;
+  border: none;
+  background-color: #002b4a;
+}
+
+.red {
+  color: red;
+}
+
 /* VISUALLY-HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -424,7 +526,7 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 1240px;
+  max-width: 454px;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;

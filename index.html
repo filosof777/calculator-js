@@ -6,15 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <!-- links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/flexbox-grid.css">
   <link rel="stylesheet" href="css/main.min.css">
   <!-- /links -->
 </head>
 <body>
   <!-- header -->
   <header>
+    <div class="container">
 
+      <div class="calc">
+        <div class="calc-inner">
+          <div class="answer-list"></div>
+          <input disabled class="calc-input bg-transparent w-100" type="text" placeholder="0">
+        </div>
+        <ul class="list">
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-clear" type="button">C</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-divide" type="button"><img src="img/divide.svg" alt=""></button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-multiply" type="button"><img src="img/multiply.svg" alt=""></button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-remove" type="button"><img src="img/tri-rectangle.svg" alt=""></button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-7" type="button">7</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-8" type="button">8</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-9" type="button">9</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-multipl" type="button"><img src="img/minus.svg" alt=""></button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-4" type="button">4</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-5" type="button">5</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-6" type="button">6</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-add" type="button"><img src="img/plus.svg" alt=""></button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-1" type="button">1</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-2" type="button">2</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-3" type="button">3</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-barobar" type="button">=</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-procent" type="button">%</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-point" type="button">.</button></li>
+          <li class="item"><button class="calc-btn  w-100 h-100" id="btn-0" type="button">0</button></li>
+        </ul>
+      </div>
+    </div>
   </header>
   <!-- /header -->
 
