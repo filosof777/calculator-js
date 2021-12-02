@@ -111,8 +111,10 @@ let elAnswerList = document.querySelector('.answer-list');
 elBtnBarobar.addEventListener('click', () => {
   let input = document.createElement('input');
   input.className = 'calc-answer';
-  input.value = eval(elInput.value);
-  elAnswerList.appendChild(input)
+  // input.value = eval(elInput.value);
+  input.setAttribute('disabled', 'disabled');
+  input.value = elInput.value + '=' + eval(elInput.value);
+  elAnswerList.appendChild(input);
 
   if (elInput.value == '') {
     input.value = 'Error'
